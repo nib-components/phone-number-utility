@@ -1,3 +1,4 @@
 {
-  "name": "phone-number-utility"
+  "name": "phone-number-utility",
+  "scripts": ["index.js", "lib/au.js"]
 }
