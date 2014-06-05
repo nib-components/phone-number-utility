@@ -1,5 +1,6 @@
 {
   "name": "phone-number-service",
+  "version": "0.1.0",
   "devDependencies": {
     "mocha": "^1.20.0"
   }
