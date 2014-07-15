@@ -5,5 +5,10 @@
  * @returns {PhoneNumberUtility}
  */
 module.exports = function(locale) {
-  return require('./lib/'+locale);
+  switch(locale) {
+    case 'au':
+      return require('./lib/'+locale);
+    default:
+      throw new Error();
+  }
 };
