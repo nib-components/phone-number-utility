@@ -7,7 +7,7 @@
 module.exports = function(locale) {
   switch(locale) {
     case 'au':
-      return require('./lib/'+locale);
+      return require('./lib/au');
     default:
       throw new Error();
   }
