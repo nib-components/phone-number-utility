@@ -31,11 +31,15 @@ describe('PhoneNumberUtility', function(){
   describe('#format()', function(){
 
     it('should be formatted as a mobile number', function(){
-      assert.equal('0462 372 396', util.format('0499999999'));
+      assert.equal('0499 999 999', util.format('0499999999'));
     });
 
     it('should be formatted as an unknown number', function(){
-      assert.equal('02 4963 1194', util.format('0299999999'));
+      assert.equal('02 9999 9999', util.format('0299999999'));
+    });
+
+    it('should return empty string for null', function(){
+      assert.equal('', util.format(null));
     });
 
   });
